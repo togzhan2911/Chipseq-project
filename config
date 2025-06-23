@@ -1,0 +1,10 @@
+samples:
+  GFPcon-16hr-R2:
+    R1: "GFPcon-16hr-R2_R1_combined.fastq"
+    R2: "GFPcon-16hr-R2_R2_combined.fastq"
+
+reads_dir: "data/narrowpeaks"
+
+genome:
+  fasta: "genome/narrow/genome.fa"
+  index: "genome/narrow/bowtie2_index/genome"
