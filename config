@@ -1,10 +1,47 @@
-samples:
-  GFPcon-16hr-R2:
-    R1: "GFPcon-16hr-R2_R1_combined.fastq"
-    R2: "GFPcon-16hr-R2_R2_combined.fastq"
-
 reads_dir: "data/narrowpeaks"
 
 genome:
-  fasta: "genome/narrow/genome.fa"
+  fasta: "genome/narrow/PlasmoDB-30_PbergheiANKA_Genome.fasta"
   index: "genome/narrow/bowtie2_index/genome"
+
+samples:
+  4h:
+    ip:
+      R1: 4h-ook-GFP_S1_R1_001.fastq
+      R2: 4h-ook-GFP_S1_R2_001.fastq
+    input:
+      R1: 4h-ook-input_S3_R1_001.fastq
+      R2: 4h-ook-input_S3_R2_001.fastq
+
+  8h:
+    ip:
+      R1: 8h-ook-GFP_R1_combined.fastq
+      R2: 8h-ook-GFP_R2_combined.fastq
+    input:
+      R1: 8h-ook-input_S6_R1_001.fastq
+      R2: 8h-ook-input_S6_R2_001.fastq
+
+  16h:
+    ip:
+      R1: 16h-ook-GFP_S7_R1_001.fastq
+      R2: 16h-ook-GFP_S7_R2_001.fastq
+    input:
+      R1: 16h-ook-input_S9_R1_001.fastq
+      R2: 16h-ook-input_S9_R2_001.fastq
+
+  asexA:
+    ip:
+      R1: asexA_IP_R1_001.fastq
+      R2: asexA_IP_R2_001.fastq
+    input:
+      R1: asex_input_R1_001.fastq
+      R2: asex_input_R2_001.fastq
+
+  asexB:
+    ip:
+      R1: asexB_IP_R1_001.fastq
+      R2: asexB_IP_R2_001.fastq
+    input:
+      R1: asex_input_R1_001.fastq
+      R2: asex_input_R2_001.fastq
+
